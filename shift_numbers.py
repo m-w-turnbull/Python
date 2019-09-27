@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
+# This script takes an array or list and moves list1 to the left while comparing it to the sum of list2
 
-list1 = [1, 2, 3, 12, 9, 9, 6]
+list1 = [1, 2, 3, 12, 9, 9]
 list2 = []
 
 def shift_nums():
