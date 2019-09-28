@@ -14,11 +14,14 @@ def shift_nums():
 
 def check_sums():
     if sum(list1) == sum(list2):
-        print(str(list2) + " = " + str(list1) + " TRUE" )
+        print("{} = {} TRUE".format(list2, list1))
+        #exit()
+    elif not list1:
         exit()
     else:
-        print(str(list2) + " = " + str(list1) + " FALSE" )
-        shift_nums()
+        print("{} = {} FALSE".format(list2, list1))
+        #shift_nums()
+    shift_nums()
 
 if __name__ == "__main__":
     shift_nums()
