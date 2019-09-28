@@ -15,12 +15,10 @@ def shift_nums():
 def check_sums():
     if sum(list1) == sum(list2):
         print("{} = {} TRUE".format(list2, list1))
-        #exit()
     elif not list1:
         exit()
     else:
         print("{} = {} FALSE".format(list2, list1))
-        #shift_nums()
     shift_nums()
 
 if __name__ == "__main__":
