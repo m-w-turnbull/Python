@@ -1,9 +1,10 @@
 # Amazon interview question. Find integers in order within an array whos sum equals the target.
 # Print the start and end array position of these integers when found.
+# This stops on first set found. Remove the if position statement to keep going until depleted
 
 
-master = [1, 2, 4, 5, 6, 27, 92]
-target = 15
+master = [1, 2, 4, 5, 6, 27, 92, 28, 75]
+target = 42
 
 working = master.copy()
 
@@ -18,7 +19,8 @@ for x in range(0, length, 1):
         for y in range(length2 -1, -1, -1):
             if sum(work2) == target:
                 print("Found", work2)
-                position = [x + 1, len(master) - y]
+                print("Y:", y)
+                position = [x + 1, x + len(work2)]
                 print("Found @", position)
                 #work2.pop(y)
                 break
