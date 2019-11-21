@@ -27,4 +27,8 @@ rec2_coords = rectangle_points(rectangle2)
 same_coords = compare_coords(rec1_coords, rec2_coords)
 
 #print(same_coords[0], same_coords[-1])
-print("Coordinates of overlapping rectangle:", define_common_rectangle(same_coords))
+overlapping_area = define_common_rectangle(same_coords)
+x, y = overlapping_area
+print(*rectangle1)
+
+#print("Coordinates of overlapping rectangle:", define_common_rectangle(same_coords))
