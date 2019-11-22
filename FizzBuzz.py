@@ -6,15 +6,12 @@
 # Part 2:
 # Allow for dynamic conditions in a key-pair list / dictionary
 
-
-
-ar = {
+rules = {
     3: "ground",
     4: "four",
     6: "turkey",
     0: "0"
 }
-
 
 def print_stuff(start, end, rules):
     for i in range(start, end + 1):
@@ -27,6 +24,5 @@ def print_stuff(start, end, rules):
         else:
             print(i)
 
-print_stuff(0, 12, ar)
 
-
+print_stuff(0, 12, rules)
