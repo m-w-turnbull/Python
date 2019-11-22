@@ -10,6 +10,7 @@ def sum_array_pos(target, input_array):
             print(input_array[x:y])
             print("Position: ", x + 1)
         elif sum(input_array[x:y + 1]) > target:
+            #remove this elif statement if input_array can contain negative numbers
             x += 1
             y = x
         y += 1
