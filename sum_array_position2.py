@@ -8,6 +8,9 @@ while y <= len(master) and x <= len(master):
     if sum(master[x:y]) == target:
         print(master[x:y])
         print("Position: ", x + 1)
+    elif sum(master[x:y + 1]) > target:
+        x += 1
+        y = x
     y += 1
     if y == len(master) + 1:
         x += 1
