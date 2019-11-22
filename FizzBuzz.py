@@ -1,3 +1,13 @@
+
+# Print a range of numbers
+# If the number is a even, print "Fizz"
+# If the number is divisible by 5 print "Buzz"
+
+# Part 2:
+# Allow for dynamic conditions in a key-pair list / dictionary
+
+
+
 ar = {
     3: "ground",
     4: "four",
