@@ -1,5 +1,5 @@
-coord_set1 = [[1, 1], [3, 3]]
-coord_set2 = [[5, 5], [8, 9]]
+coord_set1 = [[1, 2], [5, 5]]
+coord_set2 = [[3, 3], [7, 8]]
 
 def find_maxes(coord1, coord2):
     maxx = []
@@ -42,16 +42,12 @@ overlap = find_the_overlap(coord_set1, coord_set2)
 #print(overlap)
 
 overlap.sort()
-#if overlap[0][0] >= coord_set1[1][0] and overlap[0][1] >= coord_set1[1][1]
-
-#print(overlap[0][0])
-
-print(overlap)
 
 a_outer_x = coord_set1[1][0]
 a_outer_y = coord_set1[1][1]
 b_inner_x = coord_set2[0][0]
 b_inner_y = coord_set2[0][1]
+
 
 if overlap[0][0] >= a_outer_x and overlap[0][1] >= a_outer_y and overlap[1][0] <= b_inner_x and overlap[1][1] <= b_inner_y:
     print ("No Overlap")
